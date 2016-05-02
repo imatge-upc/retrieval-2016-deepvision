@@ -2,7 +2,8 @@
 
 This python repository contains the necessary tools to reproduce the retrieval pipeline based on off-the-shelf Faster R-CNN features described in:
 
-Amaia Salvador, Xavier Giró-i-Nieto, Ferran Marqués, Shin'ichi Satoh, Faster R-CNN Features for Instance Search
+Amaia Salvador, Xavier GirÃ³-i-Nieto, Ferran MarquÃ©s, Shin'ichi Satoh, Faster R-CNN Features for Instance Search
+
 Accepted at the DeepVision CVPR Workshop 2016. You can find a preprint of this work [here](http://arxiv.org/abs/1604.08893).
 
 ### Setup
