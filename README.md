@@ -23,14 +23,18 @@
 
 A joint collaboration between:
 
-|![logo-upc] | ![logo-nii] |
-|:-:|:-:|:-:|:-:|:-:|
-| [Universitat Politecnica de Catalunya (UPC)][upc-web]   | [National Institute of Informatics][nii-web] | 
+|![logo-upc] | ![logo-etsetb] | ![logo-gpi] |  ![logo-nii] |
+|:-:|:-:|:-:|:-:|
+|[Universitat Politecnica de Catalunya (UPC)][upc-web]   | [UPC ETSETB TelecomBCN][etsetb-web]  | [UPC Image Processing Group][gpi-web] |  [National Institute of Informatics][nii-web] | 
 
 [upc-web]: http://www.upc.edu/?set_language=en 
+[etsetb-web]: https://www.etsetb.upc.edu/en/ 
+[gpi-web]: https://imatge.upc.edu/web/ 
 [nii-web]: http://www.nii.ac.jp/en/
 
 [logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
+[logo-etsetb]: ./logos/etsetb.png "ETSETB TelecomBCN"
+[logo-gpi]: ./logos/gpi.png "UPC Image Processing Group"
 [logo-nii]: ./logos/nii.gif "National Institute of Informatics"
 
 ## Publication
