@@ -40,7 +40,7 @@ Image representations derived from pre-trained Convolutional Neural Networks (CN
 
 ### Cite
 
-This work  appeared at the DeepVision CVPR Workshop 2016. You can find a preprint of this work [here](http://arxiv.org/abs/1604.08893).
+Our [preprint](http://arxiv.org/abs/1604.08893) is publicly available on arXiv. 
 
 Please cite with the following Bibtex code:
 
@@ -57,7 +57,7 @@ Please cite with the following Bibtex code:
 
 You may also want to refer to our publication with the more human-friendly APA style:
 
-(not published yet)
+*(not published yet)*
 
 ## Code Instructions
 
@@ -101,3 +101,7 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 [logo-nvidia]: ./logos/nvidia.jpg "Logo of NVidia"
 [logo-catalonia]: ./logos/generalitat.jpg "Logo of Catalan government"
 [logo-spain]: ./logos/MEyC.png "Logo of Spanish government"
+
+## Contact
+
+If you have any general doubt about our work or code which may be of interest for other researchers, please use the public issues section on this github repo. Alternatively, drop us an e-mail at amaia.salvador@upc.edu or xavier.giro@upc.edu.
