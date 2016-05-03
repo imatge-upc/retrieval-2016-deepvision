@@ -1,22 +1,63 @@
 # Faster R-CNN Features for Instance Search
 
-This python repository contains the necessary tools to reproduce the retrieval pipeline based on off-the-shelf Faster R-CNN features described in:
+|  ![CVPR 2016 logo][logo-cvpr] | Paper accepted at [2016 IEEE Conference on Computer Vision and Pattern Recognition Workshops](http://www.deep-vision.net/)   |
+|:-:|---|
+
+[logo-cvpr]: ./logos/deepvision.png "DeepVision CVPRW 2016 logo"
+
+| ![Amaia Salvador][salvador-photo]  | ![Xavier Giro-i-Nieto][giro-photo]  | ![Ferran Marqués][marques-photo]  | ![Shin'ichi Satoh][satoh-photo]  |
+|:-:|:-:|:-:|:-:|:-:|
+| [Amaia Salvador][salvador-web]  | [Xavier Giro-i-Nieto][giro-web]  |  [Ferran Marques][marques-web] | [Shin'ichi Satoh][satoh-photo]  |
+
+
+[salvador-web]: https://imatge.upc.edu/web/people/amaia-salvador
+[giro-web]: https://imatge.upc.edu/web/people/xavier-giro
+[satoh-web]: http://research.nii.ac.jp/~satoh/
+[marques-web]:https://imatge.upc.edu/web/people/ferran-marques
+
+
+[salvador-photo]: ./authors/salvador.jpg "Amaia Salvador"
+[giro-photo]: ./authors/giro.jpg "Xavier Giro-i-Nieto"
+[marques-photo]: ./authors/marques.jpg "Ferran Marques"
+[satoh-photo]: ./authors/satoh.jpg "Shin'ichi Satoh"
+
+A joint collaboration between:
+
+|![logo-upc] | ![logo-nii] |
+|:-:|:-:|:-:|:-:|:-:|
+| [Universitat Politecnica de Catalunya (UPC)][upc-web]   | [National Institute of Informatics][nii-web] | 
+
+[upc-web]: http://www.upc.edu/?set_language=en 
+[nii-web]: http://www.nii.ac.jp/en/
+
+[logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
+[logo-nii]: ./logos/nii.gif "National Institute of Informatics"
+
+## Publication
+### Abstract
+
+Image representations derived from pre-trained Convolutional Neural Networks (CNNs) have become the new state of the art in computer vision tasks such as instance retrieval. This work explores the suitability for instance retrieval of image- and region-wise representations pooled from an object detection CNN such as Faster R-CNN. We take advantage of the object proposals learned by a Region Proposal Network (RPN) and their associated CNN features to build an instance search pipeline composed of a first filtering stage followed by a spatial reranking. We further investigate the suitability of Faster R-CNN features when the network is fine-tuned for the same objects one wants to retrieve. We assess the performance of our proposed system with the Oxford Buildings 5k, Paris Buildings 6k and a subset of TRECVid Instance Search 2013, achieving competitive results.
+
+### Cite
 
 Amaia Salvador, Xavier Giró-i-Nieto, Ferran Marqués, Shin'ichi Satoh, Faster R-CNN Features for Instance Search
 
 Accepted at the DeepVision CVPR Workshop 2016. You can find a preprint of this work [here](http://arxiv.org/abs/1604.08893).
 
-## Abstract
+![Image of the paper](./figs/paper.jpg)
 
-Image representations derived from pre-trained Convolutional Neural Networks (CNNs) have become the new state of the art in computer vision tasks such as instance retrieval. This work explores the suitability for instance retrieval of image- and region-wise representations pooled from an object detection CNN such as Faster R-CNN. We take advantage of the object proposals learned by a Region Proposal Network (RPN) and their associated CNN features to build an instance search pipeline composed of a first filtering stage followed by a spatial reranking. We further investigate the suitability of Faster R-CNN features when the network is fine-tuned for the same objects one wants to retrieve. We assess the performance of our proposed system with the Oxford Buildings 5k, Paris Buildings 6k and a subset of TRECVid Instance Search 2013, achieving competitive results.
 
-## Setup
+## Code Instructions
+
+This python repository contains the necessary tools to reproduce the retrieval pipeline based on off-the-shelf Faster R-CNN features.
+
+### Setup
 
 - You need to download and install Faster R-CNN [python implementation by Ross Girshick](https://github.com/rbgirshick/py-faster-rcnn). Point ```params['fast_rcnn_path']``` to the Faster R-CNN root path.
 - Download [Oxford](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/) and [Paris](http://www.robots.ox.ac.uk/~vgg/data/parisbuildings/) Buildings datasets. There are scripts under ```data/images/paris``` and ```data/images/oxford/``` that will do that for you.
 - Download Faster R-CNN models by running ```data/models/fetch_models.sh```.
 
-## Usage
+### Usage
 
 - Data preparation. Run ```read_data.py``` to create the lists of query and database images. Run this twice changing ```params['dataset']``` to ```'oxford'``` and ```'paris'```.
 - Feature Extraction. Run ```features.py``` to extract Fast R-CNN features for all images in a dataset and store them to disk.
@@ -25,7 +66,26 @@ Image representations derived from pre-trained Convolutional Neural Networks (CN
 - Evaluation. Run ```eval.py``` to obtain the Average Precision.
 - Visualization. Run ```vis.py```to populate ```data/figures``` with the visualization of the top generated rankings for each query.
 
-
-## Technical Support
-
 ## Acknowledgements
+
+We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.
+
+| ![AlbertGil-photo]  | ![JosepPujal-photo]  |
+|:-:|:-:|
+| [Albert Gil](AlbertGil-web)  |  [Josep Pujal](JosepPujal-web) |
+
+[AlbertGil-photo]: ./authors/gil.jpg "Albert Gil"
+[JosepPujal-photo]: ./authors/pujal.jpg "Josep Pujal"
+
+[AlbertGil-web]: https://imatge.upc.edu/web/people/albert-gil-moreno
+[JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal
+
+|   |   |
+|:--|:-:|
+|  We gratefully acknowledge the support of [NVIDIA Corporation](http://www.nvidia.com/content/global/global.php) with the donation of the GeoForce GTX [Titan Z](http://www.nvidia.com/gtx-700-graphics-cards/gtx-titan-z/) and [Titan X](http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x) used in this work. |  ![logo-nvidia] |
+|  The Image ProcessingGroup at the UPC is a [SGR14 Consolidated Research Group](https://imatge.upc.edu/web/projects/sgr14-image-and-video-processing-group) recognized and sponsored by the Catalan Government (Generalitat de Catalunya) through its [AGAUR](http://agaur.gencat.cat/en/inici/index.html) office. |  ![logo-catalonia] |
+|  This work has been developed in the framework of the project [BigGraph TEC2013-43935-R](https://imatge.upc.edu/web/projects/biggraph-heterogeneous-information-and-graph-signal-processing-big-data-era-application), funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).  | ![logo-spain] | 
+
+[logo-nvidia]: ./logos/nvidia.jpg "Logo of NVidia"
+[logo-catalonia]: ./logos/generalitat.jpg "Logo of Catalan government"
+[logo-spain]: ./logos/MEyC.png "Logo of Spanish government"
