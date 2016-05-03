@@ -35,7 +35,7 @@ A joint collaboration between:
 [logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
 [logo-etsetb]: ./logos/etsetb.png "ETSETB TelecomBCN"
 [logo-gpi]: ./logos/gpi.png "UPC Image Processing Group"
-[logo-nii]: ./logos/nii.gif "National Institute of Informatics"
+[logo-nii]: ./logos/nii.png "National Institute of Informatics"
 
 ## Publication
 ### Abstract
@@ -69,7 +69,7 @@ This python repository contains the necessary tools to reproduce the retrieval p
 
 ### Setup
 
-- You need to download and install Faster R-CNN [python implementation by Ross Girshick](https://github.com/rbgirshick/py-faster-rcnn). Point ```params['fast_rcnn_path']``` to the Faster R-CNN root path.
+- You need to download and install Faster R-CNN [python implementation by Ross Girshick](https://github.com/rbgirshick/py-faster-rcnn). Point ```params['fast_rcnn_path']``` to the Faster R-CNN root path in ```params.py```.
 - Download [Oxford](http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/) and [Paris](http://www.robots.ox.ac.uk/~vgg/data/parisbuildings/) Buildings datasets. There are scripts under ```data/images/paris``` and ```data/images/oxford/``` that will do that for you.
 - Download Faster R-CNN models by running ```data/models/fetch_models.sh```.
 
@@ -84,7 +84,7 @@ This python repository contains the necessary tools to reproduce the retrieval p
 
 ## Acknowledgements
 
-We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at the UPC.
+We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at UPC.
 
 | ![AlbertGil-photo]  | ![JosepPujal-photo]  |
 |:-:|:-:|
