@@ -49,19 +49,21 @@ Our [preprint](http://arxiv.org/abs/1604.08893) is publicly available on arXiv.
 Please cite with the following Bibtex code:
 
 ````
-@article{salvador2016faster,
+@inproceedings{salvador2016faster,
   title={Faster R-CNN Features for Instance Search},
   author={Salvador, Amaia and Giro-i-Nieto, Xavier and Marques, Ferran and Satoh, Shin'ichi},
-  journal={arXiv preprint arXiv:1604.08893},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
   year={2016}
 }
 ````
 
 ![Image of the paper](./figs/paper.jpg)
 
-You may also want to refer to our publication with the more human-friendly APA style:
+You may also want to refer to our publication with the more human-friendly Chicago style:
 
-*(not published yet)*
+````
+Amaia Salvador, Xavier Giro-i-Nieto, Ferran Marques and Shin'ichi Satoh. "Faster R-CNN Features for Instance Search." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops. 2016.
+````
 
 ## Code Instructions
 
