@@ -93,6 +93,12 @@ This python repository contains the necessary tools to reproduce the retrieval p
 - Evaluation. Run ```eval.py``` to obtain the Average Precision.
 - Visualization. Run ```vis.py```to populate ```data/figures``` with the visualization of the top generated rankings for each query.
 
+## Behind the scenes
+
+![gpi-photo]
+
+[gpi-photo]: ./figs/gpi-small.jpg "Amaia Salvador at the Universitat Politecnica de Catalunya 2016"
+
 ## Acknowledgements
 
 We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at UPC.
