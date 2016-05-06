@@ -3,7 +3,7 @@
 |  ![CVPR 2016 logo][logo-cvpr] | Paper accepted at [2016 IEEE Conference on Computer Vision and Pattern Recognition Workshops](http://www.deep-vision.net/)   |
 |:-:|---|
 
-[logo-cvpr]: ./logos/deepvision.png "DeepVision CVPRW 2016 logo"
+[logo-cvpr]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/deepvision.png "DeepVision CVPRW 2016 logo"
 
 | ![Amaia Salvador][salvador-photo]  | ![Xavier Giro-i-Nieto][giro-photo]  | ![Ferran Marqués][marques-photo]  | ![Shin'ichi Satoh][satoh-photo]  |
 |:-:|:-:|:-:|:-:|:-:|
@@ -15,11 +15,10 @@
 [satoh-web]: http://research.nii.ac.jp/~satoh/
 [marques-web]:https://imatge.upc.edu/web/people/ferran-marques
 
-
-[salvador-photo]: ./authors/salvador.jpg "Amaia Salvador"
-[giro-photo]: ./authors/giro.jpg "Xavier Giro-i-Nieto"
-[marques-photo]: ./authors/marques.jpg "Ferran Marques"
-[satoh-photo]: ./authors/satoh.jpg "Shin'ichi Satoh"
+[salvador-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/salvador.jpg "Amaia Salvador"
+[giro-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/giro.jpg "Xavier Giro-i-Nieto"
+[marques-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/marques.jpg "Ferran Marques"
+[satoh-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/satoh.jpg "Shin'ichi Satoh"
 
 A joint collaboration between:
 
@@ -32,10 +31,10 @@ A joint collaboration between:
 [gpi-web]: https://imatge.upc.edu/web/ 
 [nii-web]: http://www.nii.ac.jp/en/
 
-[logo-upc]: ./logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
-[logo-etsetb]: ./logos/etsetb.png "ETSETB TelecomBCN"
-[logo-gpi]: ./logos/gpi.png "UPC Image Processing Group"
-[logo-nii]: ./logos/nii.png "National Institute of Informatics"
+[logo-upc]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/upc.jpg "Universitat Politecnica de Catalunya (UPC)"
+[logo-etsetb]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/etsetb.png "ETSETB TelecomBCN"
+[logo-gpi]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/gpi.png "UPC Image Processing Group"
+[logo-nii]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/nii.png "National Institute of Informatics"
 
 ## Publication
 ### Abstract
@@ -57,7 +56,7 @@ Please cite with the following Bibtex code:
 }
 ````
 
-![Image of the paper](./figs/paper.jpg)
+![Image of the paper](https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/figs/paper.jpg)
 
 You may also want to refer to our publication with the more human-friendly Chicago style:
 
@@ -97,7 +96,7 @@ This python repository contains the necessary tools to reproduce the retrieval p
 
 ![gpi-photo]
 
-[gpi-photo]: ./figs/gpi-small.jpg "Amaia Salvador at the Universitat Politecnica de Catalunya 2016"
+[gpi-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master//figs/gpi-small.jpg "Amaia Salvador at the Universitat Politecnica de Catalunya 2016"
 
 ## Acknowledgements
 
@@ -107,8 +106,8 @@ We would like to especially thank Albert Gil Moreno and Josep Pujal from our tec
 |:-:|:-:|
 | [Albert Gil](AlbertGil-web)  |  [Josep Pujal](JosepPujal-web) |
 
-[AlbertGil-photo]: ./authors/gil.jpg "Albert Gil"
-[JosepPujal-photo]: ./authors/pujal.jpg "Josep Pujal"
+[AlbertGil-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/gil.jpg "Albert Gil"
+[JosepPujal-photo]: https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/pujal.jpg "Josep Pujal"
 
 [AlbertGil-web]: https://imatge.upc.edu/web/people/albert-gil-moreno
 [JosepPujal-web]: https://imatge.upc.edu/web/people/josep-pujal
