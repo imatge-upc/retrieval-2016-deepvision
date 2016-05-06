@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Faster R-CNN features for Instance Search by imatge-upc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Faster R-CNN features for Instance Search</h1>
+      <h2 class="project-tagline">2016 IEEE Conference on Computer Vision and Pattern Recognition Workshops: DeepVision</h2>
+      <a href="https://github.com/imatge-upc/retrieval-2016-deepvision" class="btn">View on GitHub</a>
+      <a href="https://github.com/imatge-upc/retrieval-2016-deepvision/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/imatge-upc/retrieval-2016-deepvision/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <table>
+<thead>
+<tr>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/deepvision.png" alt="CVPR 2016 logo" title="DeepVision CVPRW 2016 logo"></th>
+<th>Paper accepted at <a href="http://www.deep-vision.net/">2016 IEEE Conference on Computer Vision and Pattern Recognition Workshops</a>
+</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/salvador.jpg" alt="Amaia Salvador" title="Amaia Salvador"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/giro.jpg" alt="Xavier Giro-i-Nieto" title="Xavier Giro-i-Nieto"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/marques.jpg" alt="Ferran Marqués" title="Ferran Marques"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/satoh.jpg" alt="Shin'ichi Satoh" title="Shin'ichi Satoh"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="https://imatge.upc.edu/web/people/amaia-salvador">Amaia Salvador</a></td>
+<td align="center"><a href="https://imatge.upc.edu/web/people/xavier-giro">Xavier Giro-i-Nieto</a></td>
+<td align="center"><a href="https://imatge.upc.edu/web/people/ferran-marques">Ferran Marques</a></td>
+<td align="center"><a href="http://research.nii.ac.jp/%7Esatoh/">Shin'ichi Satoh</a></td>
+</tr>
+</tbody>
+</table>
+
+<p>A joint collaboration between:</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/upc.jpg" alt="logo-upc" title="Universitat Politecnica de Catalunya (UPC)"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/etsetb.png" alt="logo-etsetb" title="ETSETB TelecomBCN"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/gpi.png" alt="logo-gpi" title="UPC Image Processing Group"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/logos/nii.png" alt="logo-nii" title="National Institute of Informatics"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="http://www.upc.edu/?set_language=en">Universitat Politecnica de Catalunya (UPC)</a></td>
+<td align="center"><a href="https://www.etsetb.upc.edu/en/">UPC ETSETB TelecomBCN</a></td>
+<td align="center"><a href="https://imatge.upc.edu/web/">UPC Image Processing Group</a></td>
+<td align="center"><a href="http://www.nii.ac.jp/en/">National Institute of Informatics</a></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="publication" class="anchor" href="#publication" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Publication</h2>
+
+<h3>
+<a id="abstract" class="anchor" href="#abstract" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Abstract</h3>
+
+<p>Image representations derived from pre-trained Convolutional Neural Networks (CNNs) have become the new state of the art in computer vision tasks such as instance retrieval. This work explores the suitability for instance retrieval of image- and region-wise representations pooled from an object detection CNN such as Faster R-CNN. We take advantage of the object proposals learned by a Region Proposal Network (RPN) and their associated CNN features to build an instance search pipeline composed of a first filtering stage followed by a spatial reranking. We further investigate the suitability of Faster R-CNN features when the network is fine-tuned for the same objects one wants to retrieve. We assess the performance of our proposed system with the Oxford Buildings 5k, Paris Buildings 6k and a subset of TRECVid Instance Search 2013, achieving competitive results.</p>
+
+<h3>
+<a id="cite" class="anchor" href="#cite" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Cite</h3>
+
+<p>Our <a href="http://arxiv.org/abs/1604.08893">preprint</a> is publicly available on arXiv. </p>
+
+<p>Please cite with the following Bibtex code:</p>
+
+<pre><code>@inproceedings{salvador2016faster,
+  title={Faster R-CNN Features for Instance Search},
+  author={Salvador, Amaia and Giro-i-Nieto, Xavier and Marques, Ferran and Satoh, Shin'ichi},
+  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
+  year={2016}
+}
+</code></pre>
+
+<p><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/figs/paper.jpg" alt="Image of the paper"></p>
+
+<p>You may also want to refer to our publication with the more human-friendly Chicago style:</p>
+
+<pre><code>Amaia Salvador, Xavier Giro-i-Nieto, Ferran Marques and Shin'ichi Satoh. "Faster R-CNN Features for Instance Search." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops. 2016.
+</code></pre>
+
+<h3>
+<a id="talk-on-video" class="anchor" href="#talk-on-video" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Talk on video</h3>
+
+
+
+<p><a href="https://vimeo.com/165478041">2016-05-Seminar-AmaiaSalvador-DeepVision</a> from <a href="https://vimeo.com/gpi">Image Processing Group</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<h3>
+<a id="slides" class="anchor" href="#slides" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Slides</h3>
+
+<p>  </p><div> <strong> <a href="//www.slideshare.net/xavigiro/convolutional-features-for-instance-search" title="Convolutional Features for Instance Search">Convolutional Features for Instance Search</a> </strong> from <strong><a href="//www.slideshare.net/xavigiro">Xavier Giro</a></strong> </div>
+
+<h2>
+<a id="code-instructions" class="anchor" href="#code-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Code Instructions</h2>
+
+<p>This python repository contains the necessary tools to reproduce the retrieval pipeline based on off-the-shelf Faster R-CNN features.</p>
+
+<h3>
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h3>
+
+<ul>
+<li>You need to download and install Faster R-CNN <a href="https://github.com/rbgirshick/py-faster-rcnn">python implementation by Ross Girshick</a>. Point <code>params['fast_rcnn_path']</code> to the Faster R-CNN root path in <code>params.py</code>.</li>
+<li>Download <a href="http://www.robots.ox.ac.uk/%7Evgg/data/oxbuildings/">Oxford</a> and <a href="http://www.robots.ox.ac.uk/%7Evgg/data/parisbuildings/">Paris</a> Buildings datasets. There are scripts under <code>data/images/paris</code> and <code>data/images/oxford/</code> that will do that for you.</li>
+<li>Download Faster R-CNN models by running <code>data/models/fetch_models.sh</code>.</li>
+</ul>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+
+<ul>
+<li>Data preparation. Run <code>read_data.py</code> to create the lists of query and database images. Run this twice changing <code>params['dataset']</code> to <code>'oxford'</code> and <code>'paris'</code>.</li>
+<li>Feature Extraction. Run <code>features.py</code> to extract Fast R-CNN features for all images in a dataset and store them to disk.</li>
+<li>Ranking. Run <code>ranker.py</code> to generate and store the rankings for the queries of the chosen dataset.</li>
+<li>Rerank based on region features by running <code>rerank.py</code>.</li>
+<li>Evaluation. Run <code>eval.py</code> to obtain the Average Precision.</li>
+<li>Visualization. Run <code>vis.py</code>to populate <code>data/figures</code> with the visualization of the top generated rankings for each query.</li>
+</ul>
+
+<h2>
+<a id="behind-the-scenes" class="anchor" href="#behind-the-scenes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Behind the scenes</h2>
+
+<p><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master//figs/gpi-small.jpg" alt="gpi-photo" title="Amaia Salvador at the Universitat Politecnica de Catalunya 2016"></p>
+
+<h2>
+<a id="acknowledgements" class="anchor" href="#acknowledgements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Acknowledgements</h2>
+
+<p>We would like to especially thank Albert Gil Moreno and Josep Pujal from our technical support team at the Image Processing Group at UPC.</p>
+
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/gil.jpg" alt="AlbertGil-photo" title="Albert Gil"></th>
+<th align="center"><img src="https://raw.githubusercontent.com/imatge-upc/retrieval-2016-deepvision/master/authors/pujal.jpg" alt="JosepPujal-photo" title="Josep Pujal"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><a href="AlbertGil-web">Albert Gil</a></td>
+<td align="center"><a href="JosepPujal-web">Josep Pujal</a></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">We gratefully acknowledge the support of <a href="http://www.nvidia.com/content/global/global.php">NVIDIA Corporation</a> with the donation of the GeForce GTX <a href="http://www.nvidia.com/gtx-700-graphics-cards/gtx-titan-z/">Titan Z</a> and <a href="http://www.geforce.com/hardware/desktop-gpus/geforce-gtx-titan-x">Titan X</a> used in this work.</td>
+<td align="center"><img src="./logos/nvidia.jpg" alt="logo-nvidia" title="Logo of NVidia"></td>
+</tr>
+<tr>
+<td align="left">The Image ProcessingGroup at the UPC is a <a href="https://imatge.upc.edu/web/projects/sgr14-image-and-video-processing-group">SGR14 Consolidated Research Group</a> recognized and sponsored by the Catalan Government (Generalitat de Catalunya) through its <a href="http://agaur.gencat.cat/en/inici/index.html">AGAUR</a> office.</td>
+<td align="center"><img src="./logos/generalitat.jpg" alt="logo-catalonia" title="Logo of Catalan government"></td>
+</tr>
+<tr>
+<td align="left">This work has been developed in the framework of the project <a href="https://imatge.upc.edu/web/projects/biggraph-heterogeneous-information-and-graph-signal-processing-big-data-era-application">BigGraph TEC2013-43935-R</a>, funded by the Spanish Ministerio de Economía y Competitividad and the European Regional Development Fund (ERDF).</td>
+<td align="center"><img src="./logos/MEyC.png" alt="logo-spain" title="Logo of Spanish government"></td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h2>
+
+<p>If you have any general doubt about our work or code which may be of interest for other researchers, please use the public issues section on this github repo. Alternatively, drop us an e-mail at <a href="mailto:amaia.salvador@upc.edu">amaia.salvador@upc.edu</a> or <a href="mailto:xavier.giro@upc.edu">xavier.giro@upc.edu</a>.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/imatge-upc/retrieval-2016-deepvision">Faster R-CNN features for Instance Search</a> is maintained by <a href="https://github.com/imatge-upc">imatge-upc</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
