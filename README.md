@@ -65,6 +65,15 @@ You may also want to refer to our publication with the more human-friendly Chica
 Amaia Salvador, Xavier Giro-i-Nieto, Ferran Marques and Shin'ichi Satoh. "Faster R-CNN Features for Instance Search." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops. 2016.
 ````
 
+### Talk on video
+
+<iframe src="https://player.vimeo.com/video/165478041" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<p><a href="https://vimeo.com/165478041">2016-05-Seminar-AmaiaSalvador-DeepVision</a> from <a href="https://vimeo.com/gpi">Image Processing Group</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+### Slides
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/lZzb4HdY6OEZ01" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/xavigiro/convolutional-features-for-instance-search" title="Convolutional Features for Instance Search" target="_blank">Convolutional Features for Instance Search</a> </strong> from <strong><a href="//www.slideshare.net/xavigiro" target="_blank">Xavier Giro</a></strong> </div>
+
 ## Code Instructions
 
 This python repository contains the necessary tools to reproduce the retrieval pipeline based on off-the-shelf Faster R-CNN features.
