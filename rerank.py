@@ -12,6 +12,7 @@ sys.path.insert(0, os.path.join(params['fast_rcnn_path'],'caffe-fast-rcnn', 'pyt
 sys.path.insert(0, os.path.join(params['fast_rcnn_path'],'lib'))
 
 import caffe
+from fast_rcnn.config import cfg
 import test as test_ops
 
 class Reranker():
@@ -49,6 +50,7 @@ class Reranker():
         else:
             caffe.set_mode_cpu()
 
+        cfg.TEST.HAS_RPN = True
         self.net = caffe.Net(params['net_proto'], params['net'], caffe.TEST)
         self.queries = params['query_names']
         # List of queries
@@ -182,7 +184,7 @@ class Reranker():
             query_feats += self.get_query_local_feat(query_)
         
         query_feats/=num_queries
-        
+        query_feats = query_feats.reshape(-1, 1)
         
         if self.stage is 'rerank2nd':
             # second stage of reranking. taking N locations at top N ranking as queries...
