@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.join(params['fast_rcnn_path'],'caffe-fast-rcnn', 'pyt
 sys.path.insert(0, os.path.join(params['fast_rcnn_path'],'lib'))
 
 import caffe
+from fast_rcnn.config import cfg
 import test as test_ops
 
 
@@ -52,6 +53,7 @@ class Extractor():
         else:
             caffe.set_mode_cpu()
         print "Extracting from:", params['net_proto']
+        cfg.TEST.HAS_RPN = True
         self.net = caffe.Net(params['net_proto'], params['net'], caffe.TEST)
 
     def extract_feat_image(self,image):
@@ -80,7 +82,7 @@ class Extractor():
         print "Extracting database features..."
         t0 = time.time()
         counter = 0
-        
+
         # Init empty np array to store all databsae features
         xfeats = np.zeros((len(self.database_list),self.dimension))
         
