@@ -184,7 +184,7 @@ class Reranker():
             query_feats += self.get_query_local_feat(query_)
         
         query_feats/=num_queries
-        
+        query_feats = query_feats.reshape(-1, 1)
         
         if self.stage is 'rerank2nd':
             # second stage of reranking. taking N locations at top N ranking as queries...
