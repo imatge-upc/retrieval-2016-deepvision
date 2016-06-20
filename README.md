@@ -43,16 +43,18 @@ Image representations derived from pre-trained Convolutional Neural Networks (CN
 
 ### Cite
 
-Our [preprint](http://arxiv.org/abs/1604.08893) is publicly available on arXiv. 
+You can find [our paper](http://www.cv-foundation.org/openaccess/content_cvpr_2016_workshops/w12/papers/Salvador_Faster_R-CNN_Features_CVPR_2016_paper.pdf) in the [Proceedings of the DeepVision: Deep Learning in Computer Vision Workshop](http://www.cv-foundation.org/openaccess/CVPR2016_workshops/CVPR2016_W12.py) at CVPR 2016. 
+Our [preprint](http://arxiv.org/abs/1604.08893) is also available on arXiv. 
 
 Please cite with the following Bibtex code:
 
 ````
-@inproceedings{salvador2016faster,
-  title={Faster R-CNN Features for Instance Search},
-  author={Salvador, Amaia and Giro-i-Nieto, Xavier and Marques, Ferran and Satoh, Shin'ichi},
-  booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops},
-  year={2016}
+@InProceedings{Salvador_2016_CVPR_Workshops,
+author = {Salvador, Amaia and Giro-i-Nieto, Xavier and Marques, Ferran and Satoh, Shin'ichi},
+title = {Faster R-CNN Features for Instance Search},
+booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+month = {June},
+year = {2016}
 }
 ````
 
@@ -61,7 +63,7 @@ Please cite with the following Bibtex code:
 You may also want to refer to our publication with the more human-friendly Chicago style:
 
 ````
-Amaia Salvador, Xavier Giro-i-Nieto, Ferran Marques and Shin'ichi Satoh. "Faster R-CNN Features for Instance Search." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition Workshops. 2016.
+Amaia Salvador, Xavier Giro-i-Nieto, Ferran Marques and Shin'ichi Satoh. "Faster R-CNN Features for Instance Search." In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops. 2016.
 ````
 
 ### Talk on video
